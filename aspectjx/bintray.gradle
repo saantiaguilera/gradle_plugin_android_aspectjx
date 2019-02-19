@@ -91,11 +91,6 @@ install {
                     }
                 }
 
-                organization {
-                    name ORGANIZATION_NAME
-                    url ORGANIZATION_URL
-                }
-
                 scm {
                     connection GIT_URL
                     developerConnection ISSUE_URL
@@ -120,6 +115,7 @@ bintray {
         licenses = ["Apache-2.0"]
         labels = 'Groovy'
         publicDownloadNumbers = true
+        // override = true
         publish = true
     }
 }
